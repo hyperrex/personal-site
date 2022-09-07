@@ -2,3 +2,5 @@ body {
   background-image: url("./img/asanoha-400px.png");
   background-repeat: repeat-y repeat-x;
 }
+
+.menu {background-color: coral;}
