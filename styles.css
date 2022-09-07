@@ -3,4 +3,8 @@ body {
   background-repeat: repeat-y repeat-x;
 }
 
+H1, H4 {color: blueviolet;}
+
+.container {background-color: lightblue}
+
 .menu {background-color: coral;}
