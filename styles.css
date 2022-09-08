@@ -1,36 +1,42 @@
 body {
-  background-image: url("./img/bg-tile.jpg");
-  background-repeat: repeat-y repeat-x;
-  font-family: 'Lato', sans-serif;
+  background-image: url("./img/zwartevilt.png");
 }
 
 H1 {
   color: whitesmoke;
   font-family: 'Racing Sans One', cursive;
+  font-size: 5rem;
 }
 
-H4 {
+H2, H3, H4, H5, H6 {
   color: whitesmoke;
-  font-family: 'Racing Sans One', cursive;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: whitesmoke;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
   width: 100%;
-  background-color: black;
 }
 
 .container {
   position: relative;
-  background-color: rgb(34, 34, 34);
+  background-image: url("./img/cartographer.png");
+  background-repeat: repeat-y repeat-x;
   min-height: 100vh;
 }
 
 .menu {
-  background-color: rgb(61, 0, 0);
+  background: rgb(70, 70, 70);
+  border-radius: 10px;
+  border: #aaaaaa solid 1px;
   margin-top: -200px;
   margin-left: 20px;
-  box-shadow: 5px 10px #0f0000;
-  height: 400px;
+  min-height: 80vh;
 }
 
 .responsive {
@@ -38,8 +44,37 @@ header {
   height: auto;
 }
 
+.portrait{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: #aaaaaa solid 1px;
+  box-shadow: 0px 3px 2px 1px;
+}
+
 .title {
   position: absolute;
-  bottom: 30px;
-  right: 50px;
+  bottom: 20px;
+  right: 30px;
+}
+
+.social {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 5%;
+  text-align: right;
+}
+
+.blog-panel {
+  margin-right: 10px;
+  min-height: 100vh;
+}
+
+.post {
+  background: rgb(70, 70, 70);
+  padding: 10px;
+  margin: 5%;
+  border: #aaaaaa solid 1px;
+  border-radius: 10px;
 }
