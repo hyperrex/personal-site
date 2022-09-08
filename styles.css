@@ -1,10 +1,45 @@
 body {
-  background-image: url("./img/asanoha-400px.png");
+  background-image: url("./img/bg-tile.jpg");
   background-repeat: repeat-y repeat-x;
+  font-family: 'Lato', sans-serif;
 }
 
-H1, H4 {color: blueviolet;}
+H1 {
+  color: whitesmoke;
+  font-family: 'Racing Sans One', cursive;
+}
 
-.container {background-color: lightblue}
+H4 {
+  color: whitesmoke;
+  font-family: 'Racing Sans One', cursive;
+}
 
-.menu {background-color: coral;}
+header {
+  width: 100%;
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  background-color: rgb(34, 34, 34);
+  min-height: 100vh;
+}
+
+.menu {
+  background-color: rgb(61, 0, 0);
+  margin-top: -200px;
+  margin-left: 20px;
+  box-shadow: 5px 10px #0f0000;
+  height: 400px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
