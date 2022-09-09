@@ -1,3 +1,8 @@
+/* Set this up from scratch with bootstrap, which is why I may have a few small
+CSS errors that likely would have been worked out in a professionally done style
+sheet. Will continue to tweak at this beyond the homework. */
+
+/* I got this gradient from: https://cssgradient.io/ */
 body {
   background: rgb(20,0,0);
   background: -moz-linear-gradient(180deg, rgba(20,0,0,1) 0%, rgba(92,0,0,1) 100%);
@@ -6,12 +11,17 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140000",endColorstr="#5c0000",GradientType=1);
 }
 
+/* Used rem instead of em since I do not define font-size in the
+parent element and I thought it would be more predictable */
 H1 {
   color: whitesmoke;
   font-family: 'Racing Sans One', cursive;
   font-size: 5rem;
 }
 
+/* imported the web font from google via a link in the document head 
+instead of downloading the font. The 700 weight is specifically for headlines
+and the regular paragraph font default is 300 light so I did not specify. */
 H2, H3, H4, H5, H6 {
   color: whitesmoke;
   font-family: 'Lato', sans-serif;
@@ -23,10 +33,13 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
+/* Trying to get this thing to cover the container edge-to-edge.
+Need to dig deeper later. */
 header {
   width: 100%;
 }
 
+/* This may not be needed */
 .row {
   position: relative;
 }
@@ -47,11 +60,15 @@ header {
   min-height: 80vh;
 }
 
+/* For dynamically resizing pictures */
 .responsive {
   width: 100%;
   height: auto;
 }
 
+/* CSS quirk where the drop shadow is covering the menu border for
+a couple pixels. Not breaking just irritating. Most people will
+never notice it. */
 .portrait{
   width: 100%;
   height: auto;
