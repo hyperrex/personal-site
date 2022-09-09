@@ -103,3 +103,38 @@ never notice it. */
   border: #aaaaaa solid 1px;
   border-radius: 10px;
 }
+
+.fa {
+  padding: 5px;
+  font-size: 2em;
+  width: 1.25em;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 4px;
+  background: #aaaaaa;
+  color: black;
+}
+
+/* Official LinkedIn brand identity color */
+.fa-linkedin:hover {
+  background: #0077B5;
+  color: white;
+}
+
+/* Official Github brand identity color */
+.fa-github:hover {
+  background: #6e5494;
+  color: white;
+}
+
+/* Instagram has a complicated gradient with many colors. In the essence of time, 
+I grabbed this gradient snippet from https://stackoverflow.com/a/53379365 
+It's likely possible to generate this from https://cssgradient.io/ using
+the official Instagram brand identity colors, but that's probably a rabbit hole
+to avoid for this project. */
+.fa-instagram:hover {
+  background: #f09433; 
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  color: white;
+}
