@@ -19,10 +19,16 @@ H1 {
   font-size: 5rem;
 }
 
+H2 {
+  color: whitesmoke;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 2rem;
+}
+
 /* imported the web font from google via a link in the document head 
 instead of downloading the font. The 700 weight is specifically for headlines
 and the regular paragraph font default is 300 light so I did not specify. */
-H2, H3, H4, H5, H6 {
+H3, H4, H5, H6 {
   color: whitesmoke;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -31,17 +37,13 @@ H2, H3, H4, H5, H6 {
 p {
   color: whitesmoke;
   font-family: 'Lato', sans-serif;
+  margin: 10px;
 }
 
 /* Trying to get this thing to cover the container edge-to-edge.
 Need to dig deeper later. */
 header {
   width: 100%;
-}
-
-/* This may not be needed */
-.row {
-  position: relative;
 }
 
 .container {
@@ -51,13 +53,17 @@ header {
   min-height: 100vh;
 }
 
+.row {
+  position: relative;
+}
+
 .menu {
   background: rgb(70, 70, 70);
   border-radius: 10px;
   border: #aaaaaa solid 1px;
   margin-top: -200px;
   margin-left: 20px;
-  min-height: 80vh;
+  padding-bottom: 10px;
 }
 
 /* For dynamically resizing pictures */
@@ -83,6 +89,40 @@ never notice it. */
   right: 30px;
 }
 
+.name {
+  text-align: center;
+  margin-top: -60px;
+}
+
+.navigation{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  display: flex;
+}
+
+.btn {
+  margin: 10px;
+  background: #a1a1a1;
+  color: black;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.btn.active{
+  background: rgba(92,0,0,1);
+  color: whitesmoke;
+  border-color: rgba(92,0,0,1);
+}
+
+.btn:hover{
+  background: rgba(92,0,0,1);
+  color: whitesmoke;
+  border-color: rgba(92,0,0,1);
+}
+
 .social {
   position: absolute;
   top: 0;
@@ -98,13 +138,22 @@ never notice it. */
 
 .post {
   background: rgb(70, 70, 70);
-  padding: 10px;
   margin: 5%;
   border: #aaaaaa solid 1px;
   border-radius: 10px;
 }
 
-.fa {
+.post-title {
+  background: rgb(70, 70, 70);
+  border: #aaaaaa solid 1px;
+  border-radius: 10px;
+  padding-top: 5px;
+  text-align: center;
+  box-shadow: 0px 3px 2px 1px;
+  margin-bottom: 10px;
+}
+
+.fa-brands {
   padding: 5px;
   font-size: 2em;
   width: 1.25em;
@@ -128,9 +177,9 @@ never notice it. */
   color: white;
 }
 
-/* Instagram has a complicated gradient with many colors. In the essence of time, 
-I grabbed this gradient snippet from https://stackoverflow.com/a/53379365 
-It's likely possible to generate this from https://cssgradient.io/ using
+/* Instagram has a complicated color ID with many colors. In the essence of time, 
+I grabbed this gradient snippet from https://stackoverflow.com/a/53379365. 
+It's possible to generate an equivalent from https://cssgradient.io/ using
 the official Instagram brand identity colors, but that's probably a rabbit hole
 to avoid for this project. */
 .fa-instagram:hover {
