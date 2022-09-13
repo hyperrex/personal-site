@@ -2,6 +2,12 @@
 CSS errors that likely would have been worked out in a professionally done style
 sheet. Will continue to tweak at this beyond the homework. */
 
+/*
+    Color scheme:
+    #00005C  - deep red
+    #464646  - medium gray
+*/
+
 /* I got this gradient from: https://cssgradient.io/ */
 body {
   background: rgb(20,0,0);
@@ -58,10 +64,10 @@ header {
 }
 
 .menu {
-  background: rgb(70, 70, 70);
+  background: #464646;
   border-radius: 10px;
   border: #aaaaaa solid 1px;
-  margin-top: -200px;
+  margin-top: -350px;
   margin-left: 20px;
   padding-bottom: 10px;
 }
@@ -75,7 +81,7 @@ header {
 /* CSS quirk where the drop shadow is covering the menu border for
 a couple pixels. Not breaking just irritating. Most people will
 never notice it. */
-.portrait{
+.portrait {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -94,7 +100,7 @@ never notice it. */
   margin-top: -60px;
 }
 
-.navigation{
+.navigation {
   margin-top: 40px;
   margin-bottom: 10px;
   padding-left: 10px;
@@ -103,24 +109,31 @@ never notice it. */
   display: flex;
 }
 
-.btn {
+.navigation a {
+  color: whitesmoke;
+  font-size:x-large;
+  text-decoration: none;
+}
+
+.nav-link {
   margin: 10px;
-  background: #a1a1a1;
-  color: black;
+  padding: 10px;
+  background: #757575;
   flex-direction: column;
   justify-content: flex-end;
+  border: #757575 solid 1px;
+  border-radius: 10px;
+  font-size:x-large;
 }
 
-.btn.active{
+.nav-link.active {
   background: rgba(92,0,0,1);
+  border: rgba(92,0,0,1) solid 1px;
   color: whitesmoke;
-  border-color: rgba(92,0,0,1);
 }
 
-.btn:hover{
-  background: rgba(92,0,0,1);
-  color: whitesmoke;
-  border-color: rgba(92,0,0,1);
+.nav-link:hover {
+  border: whitesmoke solid 1px;
 }
 
 .social {
@@ -137,20 +150,32 @@ never notice it. */
 }
 
 .post {
-  background: rgb(70, 70, 70);
+  background: #464646;
   margin: 5%;
   border: #aaaaaa solid 1px;
   border-radius: 10px;
 }
 
 .post-title {
-  background: rgb(70, 70, 70);
+  background: #464646;
   border: #aaaaaa solid 1px;
   border-radius: 10px;
   padding-top: 5px;
   text-align: center;
   box-shadow: 0px 3px 2px 1px;
   margin-bottom: 10px;
+}
+
+.date-stamp {
+  text-align: right;
+}
+
+.lead-photo {
+  float: left;
+  width: 40%;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .fa-brands {
