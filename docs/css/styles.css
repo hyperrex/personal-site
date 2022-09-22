@@ -1,0 +1,222 @@
+/* Set this up from scratch with bootstrap, which is why I may have a few small
+CSS errors that likely would have been worked out in a professionally done style
+sheet. Will continue to tweak at this beyond the homework. */
+
+/*
+    Color scheme:
+    #00005C  - deep red
+    #464646  - medium gray
+*/
+
+/* I got this gradient from: https://cssgradient.io/ */
+body {
+  background: rgb(20,0,0);
+  background: -moz-linear-gradient(180deg, rgba(20,0,0,1) 0%, rgba(92,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(20,0,0,1) 0%, rgba(92,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(20,0,0,1) 0%, rgba(92,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#140000",endColorstr="#5c0000",GradientType=1);
+}
+
+/* Used rem instead of em since I do not define font-size in the
+parent element and I thought it would be more predictable */
+H1 {
+  color: whitesmoke;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 5rem;
+}
+
+H2 {
+  color: whitesmoke;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 2rem;
+}
+
+/* imported the web font from google via a link in the document head 
+instead of downloading the font. The 700 weight is specifically for headlines
+and the regular paragraph font default is 300 light so I did not specify. */
+H3, H4, H5, H6 {
+  color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  margin: 10px;
+}
+
+/* Trying to get this thing to cover the container edge-to-edge.
+Need to dig deeper later. */
+header {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  background-image: url("./img/dark-panels.jpg");
+  background-repeat: repeat-y repeat-x;
+  min-height: 100vh;
+}
+
+.row {
+  position: relative;
+}
+
+.menu {
+  background: #464646;
+  border-radius: 10px;
+  border: #aaaaaa solid 1px;
+  margin-top: -350px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+/* For dynamically resizing pictures */
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS quirk where the drop shadow is covering the menu border for
+a couple pixels. Not breaking just irritating. Most people will
+never notice it. */
+.portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: #aaaaaa solid 1px;
+  box-shadow: 0px 3px 2px 1px;
+}
+
+.title {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+.name {
+  text-align: center;
+  margin-top: -60px;
+}
+
+.navigation {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  display: flex;
+}
+
+.navigation a {
+  color: whitesmoke;
+  font-size:x-large;
+  text-decoration: none;
+}
+
+.nav-link {
+  margin: 10px;
+  padding: 10px;
+  background: #757575;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: #757575 solid 1px;
+  border-radius: 10px;
+  font-size:x-large;
+}
+
+.nav-link.active {
+  background: rgba(92,0,0,1);
+  border: rgba(92,0,0,1) solid 1px;
+  color: whitesmoke;
+}
+
+.nav-link:hover {
+  border: whitesmoke solid 1px;
+}
+
+.social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5%;
+  text-align: right;
+}
+
+.right-panel {
+  margin-right: 10px;
+  min-height: 100vh;
+}
+
+.post {
+  background: #464646;
+  margin: 5%;
+  padding-bottom: 10px;
+  border: #aaaaaa solid 1px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.post-title {
+  background: #464646;
+  border: #aaaaaa solid 1px;
+  border-radius: 10px;
+  padding-top: 5px;
+  text-align: center;
+  box-shadow: 0px 3px 2px 1px;
+  margin-bottom: 10px;
+}
+
+.date-stamp {
+  text-align: right;
+}
+
+.lead-photo {
+  float: left;
+  width: 40%;
+  height: max-content;
+  MARGIN: 10px;
+}
+
+.repo-link a {
+  color: whitesmoke;
+  font-size: large;
+  text-align: right;
+  text-decoration: none;
+}
+
+.fa-brands {
+  padding: 5px;
+  font-size: 2em;
+  width: 1.25em;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 4px;
+  background: #aaaaaa;
+  color: black;
+}
+
+/* Official LinkedIn brand identity color */
+.fa-linkedin:hover {
+  background: #0077B5;
+  color: white;
+}
+
+/* Official Github brand identity color */
+.fa-github:hover {
+  background: #6e5494;
+  color: white;
+}
+
+/* Instagram has a complicated color ID with many colors. In the essence of time, 
+I grabbed this gradient snippet from https://stackoverflow.com/a/53379365. 
+It's possible to generate an equivalent from https://cssgradient.io/ using
+the official Instagram brand identity colors, but that's probably a rabbit hole
+to avoid for this project. */
+.fa-instagram:hover {
+  background: #f09433; 
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  color: white;
+}
