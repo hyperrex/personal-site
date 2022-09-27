@@ -54,7 +54,7 @@ header {
 
 .container {
   position: relative;
-  background-image: url("./img/dark-panels.jpg");
+  background-image: url("../img/dark-panels.jpg");
   background-repeat: repeat-y repeat-x;
   min-height: 100vh;
 }
