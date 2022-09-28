@@ -1,4 +1,7 @@
 # personal-site
 personal website
 
-Please run either build.sh or build.py
+Please run either the bash -or- python build scripts
+
+bash: 'sh build.sh'
+python: 'python3 build.py'
